@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+:root {
+    --primary-color: #3285A7;
+    --primary-light-color: rgba(87, 132, 247, 0.1);
+    --secondary-color: #212830;
+    --secondary-light-color: rgba(52, 60, 69, 0.05);
+    --tertiary-color: #F9F8FF;
+    --quaternary-color: #D8E1FE;
+    --quinary-color: #ECB386;
+    --text-light-color: #ffff;
+    --text-gray-color: #5C636B;
+    --screen-width: 380px;
+    --screen-height: 750px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+@-webkit-keyframes appear {
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+.mobile-frame-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000a;
+    font-family: 'Inter', sans-serif;
+}
+
+.mobile-frame-iphone14 {
+    width: var(--screen-width);
+    height: var(--screen-height);
+    max-width: var(--screen-width);
+    max-height: var(--screen-height);
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0 0 0.1em 0.25em hsl(44, 20%, 25%), 0 0 0 0.4em hsl(44, 30%, 85%);
+    box-sizing: border-box;
+    /* transform: scale3d(1.1, 1.1, 1); */
+    /* opacity: 0; */
+    /* animation: appear 1s cubic-bezier(0.15, 0, 0.333, 1) forwards; */
+    webkit-backface-visibility: hidden;
+    aspect-ratio: 37/76;
+    position: relative;
+    background: #fff;
+}
+
+.project-container-main {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-section-container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.project-section-container::-webkit-scrollbar {
+    display: none;
+}
+
+.project-header-main {
+    width: 100%;
+
+    padding: 1rem;
+}
+
+.header-items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+}
+
+.header-item div {
+    margin-left: .5rem;
+}
+
+.header-item div p {
+    font-family: 'Inter', sans-serif;
+
+}
+
+.header-item div span {
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.header-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.header-item i {
+    font-size: 24px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.project-content-section {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-banners {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.content-banner {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background: #3C79D6;
+    border-radius: 20px;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--text-light-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.banner-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.banner-bottom {
+    letter-spacing: .2px;
+    font-family: 'Inter', sans-serif;
+}
+
+.banner-img {
+    width: 20%;
+    position: absolute;
+    top: 15px;
+    right: -15px;
+}
+
+.content-mycourses {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.mycourses-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mycourses-head-title {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.mycourses-head-desc {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.mycourses-items {
+    margin-top: 1rem;
+    width: 100%;
+
+}
+
+.mycourses-item {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    background: #7363EA;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mycourses-item-icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.mycourses-item-details {
+    width: 70%;
+    margin-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mycourses-item-details span:first-child {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--text-light-color);
+}
+
+.mycourses-item-details span:last-child {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-light-color);
+}
+
+.my-course-status {
+    width: 100%;
+    height: 6px;
+    border-radius: 50px;
+    background: #a08ff4;
+    margin: .6rem 0;
+}
+
+
+.my-couses-status-value {
+    width: 50%;
+    height: 100%;
+    background: #C6BDFC;
+    position: relative;
+}
+
+.my-couses-status-value span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50pc;
+    background: #a08ff4;
+}
+
+.content-allcourses {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.allcourses-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.allcourses-head-title {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.allcourses-head-desc {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.allcourses-items {
+    margin-top: 1rem;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allcourses-item {
+    width: 49%;
+    height: 100%;
+    background: #C94A47;
+    border-radius: 30px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.allcourses-item:last-child {
+    background: #E353CC;
+}
+
+.allcourses-vectore {
+    position: absolute;
+    top: 20%;
+    right: -25px;
+    width: 50%;
+}
+
+.allcourses-item-details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.allcourses-item-details span:first-child {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--text-light-color);
+}
+
+.allcourses-item-details span:last-child {
+    margin-top: .5rem;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--text-light-color);
+}
+
+.allcourses-item-icon img {
+    width: 70px;
+    /* height: 70px; */
+}
+
+.allcourses-item:last-child .allcourses-item-icon img {
+    width: 50px !important;
+}
+
+.project-footer-section {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+}
+
+.footer-items {
+    width: 100%;
+    height: 7vh;
+    background: #fff;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-itm-active {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #558EDC;
+    border-radius: 50%;
+    color: var(--text-light-color);
+}
+
+.footer-itm {
+    font-size: 22px;
+}
